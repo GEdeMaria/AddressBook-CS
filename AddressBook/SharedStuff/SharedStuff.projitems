@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>67a857b0-4dff-407b-8cee-fb504094da7e</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>GEM.AddressBook</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)AddressBook.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Contact.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ContactAddress.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ContactEmail.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ContactList.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ContactName.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ContactPhone.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)EmailTypes.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PhoneTypes.cs" />
+  </ItemGroup>
+</Project>

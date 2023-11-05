@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33723.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AddressBook", "AddressBook\AddressBook.csproj", "{BCF2088D-60E6-4B11-82FE-F29284F66624}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "SharedStuff", "SharedStuff\SharedStuff.shproj", "{67A857B0-4DFF-407B-8CEE-FB504094DA7E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BCF2088D-60E6-4B11-82FE-F29284F66624}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCF2088D-60E6-4B11-82FE-F29284F66624}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCF2088D-60E6-4B11-82FE-F29284F66624}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCF2088D-60E6-4B11-82FE-F29284F66624}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E5153B41-74EF-4860-BF47-0DE68737D72A}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		SharedStuff\SharedStuff.projitems*{67a857b0-4dff-407b-8cee-fb504094da7e}*SharedItemsImports = 13
+		SharedStuff\SharedStuff.projitems*{bcf2088d-60e6-4b11-82fe-f29284f66624}*SharedItemsImports = 5
+	EndGlobalSection
+EndGlobal
