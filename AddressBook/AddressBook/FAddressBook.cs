@@ -12,7 +12,10 @@ namespace AddressBook
             lbxContacts.Items.Clear();
             foreach (Contact c in AddressBook.Contacts)
             {
-                lbxContacts.Items.Add(c.Name.TitleString);
+                if (c.Name.TitleString != string.Empty)
+                    lbxContacts.Items.Add(c.Name.TitleString);
+                else
+                    lbxContacts.Items.Add("No Name Contact");
             }
             TrySetSelection(index);
         }
@@ -118,6 +121,7 @@ namespace AddressBook
             if (!ContactLoading)
             {
                 AddressBook[lbxContacts.SelectedIndex].Name.First = txtFirst.Text;
+                PopulateList(lbxContacts.SelectedIndex);
             }
         }
         private void txtMiddle_TextChanged(object sender, EventArgs e)
@@ -125,6 +129,7 @@ namespace AddressBook
             if (!ContactLoading)
             {
                 AddressBook[lbxContacts.SelectedIndex].Name.Middle = txtMiddle.Text;
+                PopulateList(lbxContacts.SelectedIndex);
             }
         }
         private void txtLast_TextChanged(object sender, EventArgs e)
@@ -132,6 +137,7 @@ namespace AddressBook
             if (!ContactLoading)
             {
                 AddressBook[lbxContacts.SelectedIndex].Name.Last = txtLast.Text;
+                PopulateList(lbxContacts.SelectedIndex);
             }
         }
         private void txtSuffix_TextChanged(object sender, EventArgs e)
@@ -146,6 +152,7 @@ namespace AddressBook
             if (!ContactLoading)
             {
                 AddressBook[lbxContacts.SelectedIndex].Name.Notes = txtNotes.Text;
+                PopulateList(lbxContacts.SelectedIndex);
             }
         }
         private void txtLine1_TextChanged(object sender, EventArgs e)

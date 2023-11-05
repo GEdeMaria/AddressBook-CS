@@ -20,12 +20,12 @@ namespace GEM.AddressBook
                     r += First;
 
                 if (First != string.Empty && Middle != string.Empty)
-                    r += ' ' + Middle.ToUpper().First() + '.';
+                    r += " " + Middle.ToUpper().First() + ".";
                 else if (Middle != string.Empty)
                     r += Middle;
 
                 if (Notes != string.Empty)
-                    r += " (" + Notes + ')';
+                    r += " (" + Notes + ")";
 
                 return r;
 
